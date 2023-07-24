@@ -1,0 +1,21 @@
+
+<html>
+<head>
+  <title>Vacation Application Submission</title>
+</head>
+<body>
+  <h1>Vacation Application Submission</h1>
+  <form action="submission_form.php" method="POST">
+    <label for="start_date">Date from (vacation start):</label>
+    <input type="date" id="start_date" name="start_date" required><br>
+
+    <label for="end_date">Date to (vacation end):</label>
+    <input type="date" id="end_date" name="end_date" required><br>
+
+    <label for="reason">Reason:</label><br>
+    <textarea id="reason" name="reason" rows="4" cols="50" required></textarea><br>
+
+    <button type="submit">Submit</button>
+  </form>
+</body>
+</html>

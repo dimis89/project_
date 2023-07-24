@@ -1,0 +1,30 @@
+<html>
+<head>
+    <title>Application Decision</title>
+</head>
+<body>
+    <h1>Application Decision</h1>
+    <form action="send_decision.php" method="POST">
+        <input type="hidden" name="application_id" value="<?php echo $application_id; ?>">
+        <label>Reason:</label>
+        <input type="text" name="reason">
+        <br>
+        <label>Vacation Start Date:</label>
+        <input type="date" name="vacation_start_date">
+        <br>
+        <label>Vacation End Date:</label>
+        <input type="date" name="vacation_end_date">
+        <br>
+
+        <h3>Make a Decision:</h3>
+        <label>
+            <input type="radio" name="decision" value="accept"> Accept
+        </label>
+        <label>
+            <input type="radio" name="decision" value="reject"> Reject
+        </label>
+        <br>
+        <input type="submit" value="Submit Decision">
+    </form>
+</body>
+</html>
